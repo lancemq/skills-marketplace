@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "search:okx": {
+      "id": "search:okx",
+      "name": "search-cache-okx",
+      "title": "Search Cache: okx",
+      "description": "Cached search results",
+      "source": "local",
+      "version": "1.0.0",
+      "categories": [
+        "cache"
+      ],
+      "tags": [
+        "search",
+        "cache"
+      ],
+      "installCommand": "",
+      "dependencies": [],
+      "compatibility": [],
+      "securityAuditPassed": true,
+      "auditResults": {},
+      "rating": 0,
+      "downloadCount": 0,
+      "isPremium": false,
+      "createdAt": "2026-03-05T03:00:54.214Z",
+      "updatedAt": "2026-03-05T03:00:54.214Z"
+    }
+  },
+  "lastUpdated": "2026-03-05T03:00:54.214Z",
+  "version": "1.0.0"
+}

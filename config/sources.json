@@ -1,0 +1,7 @@
+{
+  "clawhub": { "enabled": true, "priority": 1 },
+  "github": { "enabled": true, "priority": 2 },
+  "npm": { "enabled": true, "priority": 3 },
+  "skills_sh": { "enabled": true, "priority": 4 },
+  "local": { "enabled": true, "priority": 5 }
+}
