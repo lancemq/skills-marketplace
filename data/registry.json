@@ -24,8 +24,33 @@
       "isPremium": false,
       "createdAt": "2026-03-05T03:00:54.214Z",
       "updatedAt": "2026-03-05T03:00:54.214Z"
+    },
+    "search:browser": {
+      "id": "search:browser",
+      "name": "search-cache-browser",
+      "title": "Search Cache: browser",
+      "description": "Cached search results",
+      "source": "local",
+      "version": "1.0.0",
+      "categories": [
+        "cache"
+      ],
+      "tags": [
+        "search",
+        "cache"
+      ],
+      "installCommand": "",
+      "dependencies": [],
+      "compatibility": [],
+      "securityAuditPassed": true,
+      "auditResults": {},
+      "rating": 0,
+      "downloadCount": 0,
+      "isPremium": false,
+      "createdAt": "2026-03-05T05:52:02.706Z",
+      "updatedAt": "2026-03-05T05:52:02.706Z"
     }
   },
-  "lastUpdated": "2026-03-05T03:00:54.214Z",
+  "lastUpdated": "2026-03-05T05:52:02.706Z",
   "version": "1.0.0"
 }

@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 
-const PORT = 3000;
+const PORT = 8000;
 const WEB_DIR = path.join(__dirname);
 
 // MIME types

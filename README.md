@@ -64,7 +64,7 @@ skills-marketplace/
 1. Navigate to the web directory: `cd web`
 2. Install web dependencies: `npm install`
 3. Start the web server: `node server.js`
-4. Access the interface at `http://localhost:3000`
+4. Access the interface at `http://localhost:8000`
 
 See [WEB_ACCESS.md](WEB_ACCESS.md) for detailed access instructions.
 
