@@ -55,9 +55,18 @@ skills-marketplace/
 
 ## Getting Started
 
+### CLI Mode
 1. Clone this repository
 2. Install dependencies: `npm install`
 3. Run the application: `node main.js --help`
+
+### Web Interface
+1. Navigate to the web directory: `cd web`
+2. Install web dependencies: `npm install`
+3. Start the web server: `node server.js`
+4. Access the interface at `http://localhost:3000`
+
+See [WEB_ACCESS.md](WEB_ACCESS.md) for detailed access instructions.
 
 ## CLI Commands
 
