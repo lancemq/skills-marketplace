@@ -1,212 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Marketplace - AI Agent Skills Hub</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            color: white;
-        }
-        
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            opacity: 0.9;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-card h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 50px 0;
-        }
-        
-        .skill-card {
-            background: rgba(255,255,255,0.9);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #764ba2;
-        }
-        
-        .skill-card h4 {
-            color: #764ba2;
-            margin-bottom: 10px;
-        }
-        
-        .cta-section {
-            text-align: center;
-            padding: 60px 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            margin: 50px 0;
-        }
-        
-        .cta-section h2 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-        }
-        
-        .cta-section p {
-            color: white;
-            max-width: 600px;
-            margin: 0 auto 30px;
-            font-size: 1.1rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-        
-        .btn:hover {
-            background: #f8f9fa;
-            transform: scale(1.05);
-        }
-        
-        footer {
-            text-align: center;
-            color: white;
-            padding: 30px 0;
-            opacity: 0.8;
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-            
-            .features, .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Skills Marketplace</h1>
-            <p>Your comprehensive hub for AI agent skills - discover, manage, create, and monetize skills in one unified platform.</p>
-        </header>
-        
-        <div class="features">
-            <div class="feature-card">
-                <h3>🔍 Multi-Source Discovery</h3>
-                <p>Search across clawhub, GitHub, npm, and other sources to find the perfect skills for your AI agents.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🛡️ Security Auditing</h3>
-                <p>Every skill undergoes rigorous security auditing to ensure safety and reliability before installation.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🚀 Easy Management</h3>
-                <p>Install, update, and manage your skills with simple CLI commands or our upcoming web interface.</p>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="seo-title">AI Skills Hub | Discover and Compare AI Skills</title>
+    <meta
+      id="seo-description"
+      name="description"
+      content="Discover, filter, and compare curated AI skills from multiple sources. Explore 1,900+ skills across development, design, productivity, and more."
+    />
+    <meta
+      id="seo-keywords"
+      name="keywords"
+      content="AI skills, Claude skills, Codex skills, skill marketplace, AI workflow, developer tools"
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="baiduspider" content="index,follow" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="google-site-verification" content="replace-with-google-verification-code" />
+    <meta name="baidu-site-verification" content="codeva-replace-with-baidu-verification-code" />
+    <meta name="author" content="AI Skills Hub" />
+    <link rel="canonical" id="seo-canonical" href="https://www.ai-skills.xyz/?lang=en" />
+    <link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/?lang=en" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ai-skills.xyz/?lang=en" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Skills Hub" />
+    <meta property="og:title" id="seo-og-title" content="AI Skills Hub | Discover and Compare AI Skills" />
+    <meta
+      id="seo-og-description"
+      property="og:description"
+      content="A searchable directory of curated AI skills with source links, categories, and platform filters."
+    />
+    <meta property="og:url" id="seo-og-url" content="https://www.ai-skills.xyz/?lang=en" />
+    <meta property="og:locale" id="seo-og-locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="seo-twitter-title" content="AI Skills Hub | Discover and Compare AI Skills" />
+    <meta
+      id="seo-twitter-description"
+      name="twitter:description"
+      content="Browse curated AI skills from multiple communities and marketplaces."
+    />
+    <meta name="twitter:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI Skills Hub",
+        "url": "https://www.ai-skills.xyz/",
+        "description": "A searchable directory of curated AI skills from multiple public sources."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "AI Skills Hub",
+        "url": "https://www.ai-skills.xyz/",
+        "description": "Explore and compare AI skills by category, source, and platform."
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a class="top-nav-brand" href="index.html">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="top-nav-logo" />
+          <span>AI Skills Hub</span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
+          <a href="mcp-protocol.html" id="nav-mcp">MCP Guide</a>
+          <a href="sources.html" id="nav-sources">Sources</a>
+          <button class="ghost top-nav-lang" id="btn-lang">EN / ZH</button>
         </div>
-        
-        <h2 style="color: white; text-align: center; margin: 50px 0;">Integrated Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h4>Agent Browser</h4>
-                <p>Browser automation capabilities for AI agents</p>
-            </div>
-            <div class="skill-card">
-                <h4>Daily Digest</h4>
-                <p>Daily summary and productivity features</p>
-            </div>
-            <div class="skill-card">
-                <h4>Find Skills</h4>
-                <p>Skill discovery and search functionality</p>
-            </div>
-            <div class="skill-card">
-                <h4>Personal Assistant</h4>
-                <p>Personal productivity and daily briefing</p>
-            </div>
-            <div class="skill-card">
-                <h4>Self Improving</h4>
-                <p>Self-improvement and learning capabilities</p>
-            </div>
-            <div class="skill-card">
-                <h4>Skill Vetter</h4>
-                <p>Security auditing and skill validation</p>
-            </div>
-            <div class="skill-card">
-                <h4>Tavily Search</h4>
-                <p>AI-optimized web search via Tavily API</p>
-            </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow" id="eyebrow">Popular AI Skills · Catalog & Links</p>
+            <span class="brand-name">AI Skills Hub</span>
+          </div>
         </div>
-        
-        <div class="cta-section">
-            <h2>Get Started Today</h2>
-            <p>Clone the repository and start exploring the future of AI agent skills management.</p>
-            <a href="https://github.com/lancemq/skills-marketplace" class="btn">View on GitHub</a>
+        <h1 id="hero-title">A clean, searchable catalog of skills you can actually use.</h1>
+        <p class="hero-sub" id="hero-sub">
+          Curated from public skill directories with fast search and clear detail links.
+        </p>
+        <div class="hero-actions">
+          <button class="primary" data-action="jump" id="btn-browse">Browse Now</button>
+          <button class="ghost" data-action="about" id="btn-about">About Sources</button>
+          <a class="ghost link-btn" id="btn-mechanism" href="skills-mechanism.html">How Skills Work</a>
+          <a class="ghost link-btn" id="btn-mcp" href="mcp-protocol.html">What is MCP</a>
         </div>
-        
-        <footer>
-            <p>Skills Marketplace © 2026 | Built for the AI Agent Ecosystem</p>
-        </footer>
-    </div>
-</body>
+      </div>
+      <div class="hero-card">
+        <div class="stat-grid">
+          <div class="stat stat-skills">
+            <span class="stat-dot"></span>
+            <span class="stat-label" id="stat-skills-label">Total Skills</span>
+            <span class="stat-value mono" id="skill-count">--</span>
+          </div>
+          <div class="stat stat-sources">
+            <span class="stat-dot"></span>
+            <span class="stat-label" id="stat-sources-label">Sources</span>
+            <span class="stat-value mono" id="source-count">--</span>
+          </div>
+          <div class="stat stat-updated">
+            <span class="stat-dot"></span>
+            <span class="stat-label" id="stat-updated-label">Last Updated</span>
+            <span class="stat-value" id="last-updated">--</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="weekly" id="weekly">
+        <div class="weekly-header">
+          <h2 id="weekly-section-title">This Week</h2>
+        </div>
+        <div class="weekly-grid">
+          <article class="weekly-card">
+            <h3 id="weekly-new-title">New Skills</h3>
+            <ul id="weekly-new-list"></ul>
+          </article>
+          <article class="weekly-card">
+            <h3 id="weekly-updated-title">Updated Skills</h3>
+            <ul id="weekly-updated-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="controls" id="controls">
+        <div class="control">
+          <label for="search" id="label-search">Search</label>
+          <input id="search" list="search-suggestions" type="search" placeholder="Search by name, tag, or description" />
+          <datalist id="search-suggestions"></datalist>
+        </div>
+        <div class="control">
+          <label for="category" id="label-category">Category</label>
+          <select id="category"></select>
+        </div>
+        <div class="control">
+          <label for="source" id="label-source">Source</label>
+          <select id="source"></select>
+        </div>
+        <div class="control">
+          <label for="platform" id="label-platform">Platform</label>
+          <select id="platform"></select>
+        </div>
+        <div class="control">
+          <label for="favorite" id="label-favorite">Favorites</label>
+          <select id="favorite"></select>
+        </div>
+        <div class="control">
+          <label for="status" id="label-status">Status</label>
+          <select id="status"></select>
+        </div>
+      </section>
+
+      <section class="favorites-panel" id="favorites-panel">
+        <div class="favorites-header">
+          <h2 id="favorites-title">Favorite Skills</h2>
+          <div class="favorites-tools">
+            <span id="favorites-count">0</span>
+            <select id="favorites-group-filter"></select>
+          </div>
+        </div>
+        <p class="favorites-empty" id="favorites-empty">No favorites yet.</p>
+        <div class="favorites-grid" id="favorites-grid"></div>
+      </section>
+
+      <section class="grid" id="skill-grid"></section>
+
+      <section class="about" id="about">
+        <h2 id="about-title">Sources & Notes</h2>
+        <p id="about-text">
+          Popularity is sourced from AwesomeSkill.ai. Official/community entries come from curated directories. You can expand sources or add GitHub sync.
+        </p>
+        <div class="about-actions">
+          <a class="ghost link-btn" id="btn-all-sources" href="sources.html">View All Sources</a>
+        </div>
+        <div class="source-list" id="source-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-text">Made for your AI skill workflow · 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>

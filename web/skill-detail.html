@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="seo-title">Skill Details | AI Skills Hub</title>
+    <meta
+      id="seo-description"
+      name="description"
+      content="Detailed AI skill profile with use cases, setup, input/output examples, and source links."
+    />
+    <meta name="keywords" id="seo-keywords" content="AI skill detail, Claude skill, Codex skill, prompt workflow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="baiduspider" content="index,follow" />
+    <link rel="canonical" id="seo-canonical" href="https://www.ai-skills.xyz/skill-detail.html?lang=en" />
+    <link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/skill-detail.html?lang=en" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/skill-detail.html?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ai-skills.xyz/skill-detail.html?lang=en" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .detail-wrap {
+        width: min(1100px, 94vw);
+        margin: 32px auto 72px;
+      }
+      .detail-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-xl);
+        background: var(--surface);
+        box-shadow: var(--shadow-sm);
+        padding: 24px;
+        display: grid;
+        gap: 14px;
+      }
+      .detail-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .detail-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .detail-grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .detail-item {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--surface-soft);
+        padding: 10px;
+      }
+      .detail-item strong {
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .detail-item p {
+        margin-top: 6px;
+      }
+      .detail-section {
+        border-top: 1px solid var(--line);
+        padding-top: 12px;
+      }
+      .detail-section h2 {
+        font-size: 20px;
+      }
+      .detail-section pre {
+        margin: 8px 0 0;
+        background: #f1f5f9;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 10px;
+        overflow: auto;
+      }
+      .related-list {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+      }
+      .related-item {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--surface-soft);
+        padding: 10px;
+      }
+      .related-item a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .related-item a:hover {
+        text-decoration: underline;
+      }
+      .related-item p {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .pill-ok {
+        color: #0f9d58;
+      }
+      .pill-bad {
+        color: #d93025;
+      }
+      @media (max-width: 760px) {
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a class="top-nav-brand" href="index.html">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="top-nav-logo" />
+          <span>AI Skills Hub</span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
+          <a href="mcp-protocol.html" id="nav-mcp">MCP Guide</a>
+          <a href="sources.html" id="nav-sources">Sources</a>
+          <button class="ghost top-nav-lang" id="detail-lang">EN / ZH</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="detail-wrap">
+      <article class="detail-card">
+        <div class="detail-top">
+          <div>
+            <p class="eyebrow" id="detail-source">Source</p>
+            <h1 id="detail-title">Loading...</h1>
+            <p id="detail-short"></p>
+          </div>
+          <div class="detail-actions">
+            <a class="ghost link-btn" href="index.html" id="detail-back">Back</a>
+            <a class="primary link-btn" id="detail-view" target="_blank" rel="noreferrer">View Source</a>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-item">
+            <strong id="label-category">Category</strong>
+            <p id="detail-category">-</p>
+          </div>
+          <div class="detail-item">
+            <strong id="label-platforms">Platforms</strong>
+            <p id="detail-platforms">-</p>
+          </div>
+          <div class="detail-item">
+            <strong id="label-popularity">Popularity</strong>
+            <p id="detail-popularity">-</p>
+          </div>
+          <div class="detail-item">
+            <strong id="label-health">Link Health</strong>
+            <p id="detail-health">-</p>
+          </div>
+        </div>
+
+        <section class="detail-section">
+          <h2 id="label-capability">Capability</h2>
+          <p id="detail-long">-</p>
+        </section>
+
+        <section class="detail-section">
+          <h2 id="label-install">Install</h2>
+          <pre><code id="detail-install-code"></code></pre>
+        </section>
+
+        <section class="detail-section">
+          <h2 id="label-usage">Usage Example</h2>
+          <pre><code id="detail-usage-code"></code></pre>
+        </section>
+
+        <section class="detail-section">
+          <h2 id="label-related">Similar Skills</h2>
+          <div class="related-list" id="related-list"></div>
+        </section>
+      </article>
+    </main>
+
+    <script src="skill-detail.js"></script>
+  </body>
+</html>

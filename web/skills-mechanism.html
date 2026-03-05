@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="seo-title">How AI Skills Work | AI Skills Hub</title>
+    <meta
+      id="seo-description"
+      name="description"
+      content="Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows."
+    />
+    <meta name="keywords" id="seo-keywords" content="AI skills mechanism, agent skills, workflow skills, Codex skills" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="AI Skills Hub" />
+    <meta property="og:title" id="seo-og-title" content="How AI Skills Work | AI Skills Hub" />
+    <meta
+      id="seo-og-description"
+      property="og:description"
+      content="Understand how AI skills are designed, installed, and used in reliable production workflows."
+    />
+    <meta property="og:url" id="seo-og-url" content="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <meta property="og:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="seo-twitter-title" content="How AI Skills Work | AI Skills Hub" />
+    <meta
+      id="seo-twitter-description"
+      name="twitter:description"
+      content="A practical guide to skill mechanism, installation patterns, and execution quality controls."
+    />
+    <meta name="twitter:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="baiduspider" content="index,follow" />
+    <link rel="canonical" id="seo-canonical" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "How AI Skills Work",
+        "description": "Practical guide to AI skills mechanism, installation, usage, and quality controls.",
+        "url": "https://www.ai-skills.xyz/skills-mechanism.html?lang=en",
+        "author": {
+          "@type": "Organization",
+          "name": "AI Skills Hub"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Skills Hub"
+        }
+      }
+    </script>
+    <style>
+      .doc-wrap {
+        width: min(1000px, 94vw);
+        margin: 36px auto 72px;
+      }
+      .doc-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-xl);
+        background: var(--surface);
+        box-shadow: var(--shadow-sm);
+        padding: 28px;
+      }
+      .doc-actions {
+        display: flex;
+        gap: 10px;
+        margin: 16px 0 24px;
+      }
+      .doc-actions a {
+        text-decoration: none;
+      }
+      .doc-title {
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+      .doc-sub {
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+      .doc-section {
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+      .doc-section h2 {
+        margin-bottom: 8px;
+      }
+      .doc-section ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+      .lang-zh {
+        display: none;
+      }
+      html[lang="zh-Hans"] .lang-en {
+        display: none;
+      }
+      html[lang="zh-Hans"] .lang-zh {
+        display: block;
+      }
+      @media (max-width: 720px) {
+        .doc-card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a class="top-nav-brand" href="index.html">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="top-nav-logo" />
+          <span>AI Skills Hub</span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
+          <a href="mcp-protocol.html" id="nav-mcp">MCP Guide</a>
+          <a href="sources.html" id="nav-sources">Sources</a>
+          <button class="ghost top-nav-lang" id="nav-lang">EN / ZH</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="doc-wrap">
+      <div class="doc-card lang-en">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow">AI Skills Hub</p>
+            <span class="brand-name">Skills Mechanism Guide</span>
+          </div>
+        </div>
+        <h1 class="doc-title">What Is an AI Skill, and Why It Matters</h1>
+        <p class="doc-sub">
+          A skill is a reusable capability package for AI agents. It combines instruction,
+          context, and execution patterns, so the agent can reliably perform a class of tasks.
+        </p>
+        <div class="doc-actions">
+          <a class="ghost link-btn" href="index.html">Back to Home</a>
+        </div>
+
+        <section class="doc-section">
+          <h2>How Skills Work (Mechanism)</h2>
+          <ul>
+            <li>Task trigger: a user request matches a known skill domain (for example, SEO, API design, test generation).</li>
+            <li>Instruction loading: the agent loads the skill instructions, rules, and templates.</li>
+            <li>Context binding: project files, user constraints, and current environment are injected into execution.</li>
+            <li>Structured execution: the agent follows the skill workflow in a deterministic order.</li>
+            <li>Output validation: results are checked against quality rules before delivery.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>What Skills Actually Do</h2>
+          <ul>
+            <li>Reduce repeated prompting and setup work.</li>
+            <li>Improve output consistency across similar tasks.</li>
+            <li>Encode best practices so teams can scale quality.</li>
+            <li>Lower onboarding cost for new contributors.</li>
+            <li>Enable faster iteration with reusable task modules.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Typical Skill Components</h2>
+          <ul>
+            <li>Role definition: what the skill is responsible for.</li>
+            <li>Execution checklist: ordered steps and decision gates.</li>
+            <li>Constraints: safety, style, or policy requirements.</li>
+            <li>Output format: expected structure for final results.</li>
+            <li>References: related data sources, tools, or templates.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>How to Install Skills (Practical Steps)</h2>
+          <ul>
+            <li>Get a skill package that contains a `SKILL.md` file.</li>
+            <li>Place it in your local skills directory (for Codex, under your configured `$CODEX_HOME/skills/...`).</li>
+            <li>Keep the folder name stable, because it is often used as the skill id.</li>
+            <li>If the skill includes `scripts/`, `assets/`, or `references/`, keep relative paths unchanged.</li>
+            <li>Restart your client/session if the runtime caches skill discovery.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>How to Use Skills in Real Work</h2>
+          <ul>
+            <li>Invoke directly: mention the skill name in prompt (for example, `$vercel-deploy`).</li>
+            <li>Auto-trigger: request a task that matches the skill domain (for example, “deploy this project to Vercel”).</li>
+            <li>Pass context: provide repo path, target platform, constraints, and expected output format.</li>
+            <li>Validate output: check links, logs, tests, and edge cases before production use.</li>
+            <li>Iterate: if output is close but not complete, ask for a second pass with explicit gaps.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Detailed Examples</h2>
+          <p><strong>Example 1: Deploy Website with a Skill</strong></p>
+          <p>Prompt:</p>
+          <pre><code>Use $vercel-deploy to deploy this repository and return the production URL.
+Repository path: /Users/maqi/code/skills
+Requirements: verify homepage works and provide final URL.</code></pre>
+          <p>Expected result:</p>
+          <ul>
+            <li>A successful deployment URL.</li>
+            <li>Validation output (status code, key route checks).</li>
+            <li>Any follow-up actions if environment variables are missing.</li>
+          </ul>
+          <p><strong>Example 2: Extend a Skill Set for a Team</strong></p>
+          <p>Prompt:</p>
+          <pre><code>Use $skill-creator to create a new "seo-audit" skill.
+Include: checklist, output template, and risk guardrails.
+Target: static websites and docs portals.</code></pre>
+          <p>Expected result:</p>
+          <ul>
+            <li>A new skill folder with `SKILL.md`.</li>
+            <li>Reusable workflow for repeated SEO checks.</li>
+            <li>Clear output schema for reports.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Common Failure Modes (And Fixes)</h2>
+          <ul>
+            <li>Ambiguous objective: split one broad request into measurable sub-goals.</li>
+            <li>Missing constraints: always provide deadline, quality bar, and output format.</li>
+            <li>No validation step: add explicit pass/fail checks before final delivery.</li>
+            <li>Overly generic instructions: include domain context (stack, users, risk level).</li>
+            <li>No feedback loop: require second-pass refinement when confidence is low.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Execution Template You Can Reuse</h2>
+          <pre><code>Goal:
+- What outcome is needed?
+
+Context:
+- Repo/files:
+- Product/domain:
+
+Constraints:
+- Deadline:
+- Risk/compliance:
+- Format requirements:
+
+Validation:
+- What checks define "done"?
+- What evidence should be returned?</code></pre>
+          <p style="margin-top:8px;">Need protocol-level tool interoperability? See <a href="mcp-protocol.html?lang=en">MCP Guide</a>.</p>
+        </section>
+      </div>
+
+      <div class="doc-card lang-zh">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow">AI Skills Hub</p>
+            <span class="brand-name">Skills 原理说明</span>
+          </div>
+        </div>
+        <h1 class="doc-title">什么是 AI Skill，它解决什么问题</h1>
+        <p class="doc-sub">
+          Skill 是给 AI 智能体复用的一组能力包，通常包含指令、上下文约束和执行流程，
+          让智能体在同类任务中更稳定地输出结果。
+        </p>
+        <div class="doc-actions">
+          <a class="ghost link-btn" href="index.html">返回首页</a>
+        </div>
+
+        <section class="doc-section">
+          <h2>Skills 的机制原理</h2>
+          <ul>
+            <li>任务触发：当用户请求命中某个能力域（如 SEO、API 设计、测试生成）时触发。</li>
+            <li>规则加载：智能体读取该 Skill 的规则、步骤和模板。</li>
+            <li>上下文绑定：把项目文件、用户约束、运行环境信息绑定到执行过程。</li>
+            <li>流程化执行：按预定义顺序完成分析、生成、检查等步骤。</li>
+            <li>结果校验：按质量标准验证输出，再返回给用户。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Skills 的作用</h2>
+          <ul>
+            <li>减少重复提示词编写和初始化成本。</li>
+            <li>提升同类任务输出的一致性和可控性。</li>
+            <li>沉淀最佳实践，便于团队规模化复用。</li>
+            <li>降低新人上手门槛，缩短协作磨合周期。</li>
+            <li>把复杂任务模块化，加快迭代速度。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>一个 Skill 通常包含</h2>
+          <ul>
+            <li>角色定义：这个 Skill 负责什么。</li>
+            <li>执行清单：按顺序执行的步骤和判断条件。</li>
+            <li>约束条件：安全、风格、规范等限制。</li>
+            <li>输出格式：结果应采用的结构和字段。</li>
+            <li>参考资源：可调用的数据源、工具或模板。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Skills 如何安装（实操步骤）</h2>
+          <ul>
+            <li>获取包含 `SKILL.md` 的技能包。</li>
+            <li>将其放入本地 skills 目录（Codex 常见为 `$CODEX_HOME/skills/...`）。</li>
+            <li>保持目录名稳定，很多系统会把目录名作为 skill 标识。</li>
+            <li>若包含 `scripts/`、`assets/`、`references/`，请保持相对路径不变。</li>
+            <li>如运行时有缓存，重启会话后再验证技能是否可被发现。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Skills 如何使用（工作流方式）</h2>
+          <ul>
+            <li>显式调用：在提示词里直接写 skill 名称（例如 `$vercel-deploy`）。</li>
+            <li>隐式触发：描述与 skill 强相关任务（例如“把项目部署到 Vercel”）。</li>
+            <li>补全上下文：提供仓库路径、目标平台、约束条件、输出格式。</li>
+            <li>结果校验：检查链接、日志、测试结果、异常分支。</li>
+            <li>二次迭代：若结果接近但不完整，明确指出缺口并要求二次执行。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>详细示例</h2>
+          <p><strong>示例 1：使用 Skill 完成部署</strong></p>
+          <p>提示词：</p>
+          <pre><code>使用 $vercel-deploy 部署当前仓库，并返回生产环境 URL。
+仓库路径：/Users/maqi/code/skills
+要求：验证首页可访问，并给出最终链接。</code></pre>
+          <p>期望产出：</p>
+          <ul>
+            <li>可访问的部署 URL。</li>
+            <li>关键校验信息（状态码、核心页面检查结果）。</li>
+            <li>若缺少环境变量，给出后续处理项。</li>
+          </ul>
+          <p><strong>示例 2：给团队新增一个可复用 Skill</strong></p>
+          <p>提示词：</p>
+          <pre><code>使用 $skill-creator 新建一个 "seo-audit" skill。
+要求包含：检查清单、输出模板、风险边界。
+目标场景：静态网站与文档站。</code></pre>
+          <p>期望产出：</p>
+          <ul>
+            <li>新增 skill 目录和 `SKILL.md` 文件。</li>
+            <li>可复用的 SEO 审核流程。</li>
+            <li>结构化报告输出格式。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>常见失败模式（及修复建议）</h2>
+          <ul>
+            <li>目标不清：把宽泛任务拆成可衡量的子目标。</li>
+            <li>约束缺失：明确时限、质量标准和输出格式。</li>
+            <li>缺少验收：在交付前先定义通过/失败规则。</li>
+            <li>指令过泛：补充技术栈、用户场景和风险等级。</li>
+            <li>没有反馈回路：低置信度结果必须二次迭代。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>可复用执行模板</h2>
+          <pre><code>目标：
+- 需要达成的结果是什么？
+
+上下文：
+- 仓库/文件：
+- 业务/产品背景：
+
+约束：
+- 截止时间：
+- 风险/合规：
+- 输出格式要求：
+
+验收：
+- 什么检查才算完成？
+- 需要返回哪些证据？</code></pre>
+          <p style="margin-top:8px;">如果你需要协议级工具互操作，可继续阅读 <a href="mcp-protocol.html?lang=zh">MCP 说明页</a>。</p>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
+      const NAV_I18N = {
+        en: { home: "Home", how: "How Skills Work", mcp: "MCP Guide", sources: "Sources", lang: "EN / ZH" },
+        zh: { home: "首页", how: "Skills 原理与作用", mcp: "MCP 说明", sources: "数据来源", lang: "EN / 中文" }
+      };
+      const SEO_I18N = {
+        en: {
+          title: "How AI Skills Work | AI Skills Hub",
+          description: "Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows.",
+          keywords: "AI skills mechanism, agent skills, workflow skills, Codex skills",
+          ogDescription: "Understand how AI skills are designed, installed, and used in reliable production workflows.",
+          twitterDescription: "A practical guide to skill mechanism, installation patterns, and execution quality controls."
+        },
+        zh: {
+          title: "Skills 原理与作用 | AI Skills Hub",
+          description: "了解 AI Skills 的机制原理、安装与使用方式，以及在实际工作流中的作用。",
+          keywords: "AI技能原理, 智能体技能, 工作流技能, Codex技能",
+          ogDescription: "了解 AI Skills 的机制、安装、使用方法与质量控制要点。",
+          twitterDescription: "一份可落地的 Skills 使用与优化实践指南。"
+        }
+      };
+      function setLang(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        try {
+          window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+        } catch (_error) {}
+        const dict = lang === "zh" ? NAV_I18N.zh : NAV_I18N.en;
+        const seo = lang === "zh" ? SEO_I18N.zh : SEO_I18N.en;
+        const navHome = document.getElementById("nav-home");
+        const navMechanism = document.getElementById("nav-mechanism");
+        const navMcp = document.getElementById("nav-mcp");
+        const navSources = document.getElementById("nav-sources");
+        const navBtn = document.getElementById("nav-lang");
+        if (navHome) {
+          navHome.textContent = dict.home;
+          navHome.href = `index.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navMechanism) {
+          navMechanism.textContent = dict.how;
+          navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navMcp) {
+          navMcp.textContent = dict.mcp;
+          navMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navSources) {
+          navSources.textContent = dict.sources;
+          navSources.href = `sources.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navBtn) {
+          navBtn.textContent = dict.lang;
+        }
+        document.title = seo.title;
+        const desc = document.getElementById("seo-description");
+        const keywords = document.getElementById("seo-keywords");
+        const ogTitle = document.getElementById("seo-og-title");
+        const ogDesc = document.getElementById("seo-og-description");
+        const ogUrl = document.getElementById("seo-og-url");
+        const twitterTitle = document.getElementById("seo-twitter-title");
+        const twitterDesc = document.getElementById("seo-twitter-description");
+        const canonical = document.getElementById("seo-canonical");
+        if (desc) desc.setAttribute("content", seo.description);
+        if (keywords) keywords.setAttribute("content", seo.keywords);
+        if (ogTitle) ogTitle.setAttribute("content", seo.title);
+        if (ogDesc) ogDesc.setAttribute("content", seo.ogDescription);
+        if (ogUrl) ogUrl.setAttribute("content", `https://www.ai-skills.xyz/skills-mechanism.html?lang=${lang}`);
+        if (twitterTitle) twitterTitle.setAttribute("content", seo.title);
+        if (twitterDesc) twitterDesc.setAttribute("content", seo.twitterDescription);
+        if (canonical) canonical.setAttribute("href", `https://www.ai-skills.xyz/skills-mechanism.html?lang=${lang}`);
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        history.replaceState({}, "", `${url.pathname}${url.search}`);
+      }
+      const initial = (() => {
+        const queryLang = new URLSearchParams(window.location.search).get("lang");
+        if (queryLang === "en" || queryLang === "zh") return queryLang;
+        try {
+          const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+          if (saved === "en" || saved === "zh") return saved;
+        } catch (_error) {}
+        return "en";
+      })();
+      setLang(initial);
+      document.getElementById("nav-lang").addEventListener("click", () => {
+        const next = document.documentElement.lang === "zh-Hans" ? "en" : "zh";
+        setLang(next);
+      });
+    </script>
+  </body>
+</html>
