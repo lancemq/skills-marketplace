@@ -1,15 +1,27 @@
 # Skills Marketplace Development Plan
 
+## Project Structure
+The project now includes all existing skills integrated into a unified marketplace:
+- **agent-browser** - Browser automation capabilities
+- **daily-digest** - Daily summary and briefing functionality  
+- **find-skills** - Skill discovery and search (core marketplace feature)
+- **personal-assistant** - Personal productivity and daily assistance
+- **self-improving** - AI self-improvement capabilities
+- **self-improving-agent** - Advanced self-improvement agent framework
+- **skill-vetter** - Security audit and skill validation
+- **tavily-search** - Web search integration
+
 ## Phase 1: Foundation & Discovery (Week 1-2)
 ### Week 1 Goals
-- [ ] Enhance `find-skills` with multi-source search (clawhub, GitHub, npm)
+- [x] Integrate existing skills into unified marketplace structure
+- [x] Enhance `find-skills` with multi-source search (clawhub, GitHub, npm)
 - [ ] Create standardized skill metadata schema
 - [ ] Implement basic skill details page generator
 - [ ] Set up daily progress tracking system
 
 ### Week 2 Goals  
 - [ ] Add skill installation and update capabilities
-- [ ] Implement security audit integration
+- [ ] Implement security audit integration (leverage existing `skill-vetter`)
 - [ ] Create local skills registry and index
 - [ ] Basic CLI interface for skills management
 
